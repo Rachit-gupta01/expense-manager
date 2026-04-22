@@ -18,8 +18,7 @@ const expenseRoutes = require('./routes/expenseRoutes');
 // Use routes
 app.use('/', authRoutes);
 app.use('/', expenseRoutes);
-
-app.listen(5000, () => console.log("Server running on port 5000"));
 app.get('/', (req, res) => {
   res.send("API Running 🚀");
 });
+app.listen(5000, () => console.log("Server running on port 5000"));
